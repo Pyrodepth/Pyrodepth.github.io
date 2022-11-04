@@ -1,0 +1,112 @@
+<html>
+  <head>
+    
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    
+    <title>Pyrodepth's Recommendations</title>
+    
+    <script>
+      function banner(){
+        var text = confirm("This link will redirect you to another website."); return text;
+      }
+      
+      function answer(){
+        var radio = document.getElementsByName("trivia");
+        var selection = false;
+        var message = "";
+        for( var i=0;i<radio.length; i++) {
+          if( radio[i].value == "yes"&& radio[i].checked==true){
+            selection=true;
+          }
+        }
+        
+        if(selection == true){
+          message = message + "<b><p style='color:green'>Awesome!</p></b>";
+        } else {
+          message = message + "<b><p style='color:red'>That's alright! I'll show you the ropes!</p></b>";
+        }
+        
+        document.getElementById("response").innerHTML = message;
+      }
+    </script>
+     
+  </head>
+  <a onclick="return banner()" href="http://simplystem.com">
+    <center><h1>Pyrodepth's Recommendations</h1></center>
+    </a>
+    
+    <p>Looking for <strong>object shows</strong> to watch or <strong>object show fanfictions</strong> to read? <u>I've got you covered!</u> <i>Here are a couple of recommendations for those who need it!</i></p>
+    
+    <p><strong>This <span class="red">website</span> features...</strong></p>
+    
+   <div class="wrap-list">
+    <ol>
+      <li>Object shows</li>
+      <li>Links to fanfictions</li>
+      <li>Popular creators</li>
+    </ol>
+    </div>
+    
+    <h1></h1>
+    <h1></h1>
+    
+    <audio width="400" height="220" controls autoplay>
+<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+</audio>
+    
+    <div class="wrap-trivia">
+    <h2>Quick question!</h2>
+    
+    <p class="paragraph">Have you ever watched an object show?</p>
+    
+    <form>
+      <div id="response"> </div>
+      <input type="radio" name="trivia" value="yes"> Yes! <br>
+      <input type="radio" name="trivia" value="No"> No. <br>
+      <input type="radio" name="trivia" value="yes"> I have started one but never finished it. <br>
+      <input onclick="answer()" type="button" value="Click Here To Submit!" id="button">
+      
+    </form>
+    </div>
+    
+    <img width="40%" src="https://i.ytimg.com/vi/E4kHzprTgUY/maxresdefault.jpg" />
+    
+    <img width="22%" src="https://bracketfights.com/images/templates/2019/29965/cmon-dad-29965/7401285e-4151-495c-9f1e-bb4dfcd3ec03png.png"/>
+    
+    <hr />
+    
+    <center>Payton Dollison <a href="https://objectshowfanonpedia.fandom.com/wiki/Object_Shows_Community_Wiki">My Favorite Website
+    </a></center>
+    
+    <nav>
+     <ul id="navmenu">
+       <li class="navitem"> <a href="index.html"> Home </a> </li>
+       <li class="navitem"> <a href="videos.html"> Videos </a> </li>
+       <li class="navitem"> <a href="images.html"> Images </a> </li>
+       </ul>
+   </nav>
+   <div class="rightside">
+     <li> Please note that this entire website is based on my opinion.</li>
+     <li>I may be a bit biased towards certain characters.</li>
+     <li>Cabby dni dni :)</li>
+   </div>
+   
+   <div class="leftside">
+   !!DISCLAIMERS!!
+   </div>
+   
+   <div class="clearfloat"></div>
+    
+  <body id="background">
+    <header id="banner">Reccomended object shows:</header>
+    <footer id="footer"> Traditional Object Shows: </footer>
+    <footer id="footer">Battle For Dream Island (4 Seasons)</footer>
+    <footer id="footer">Inanimate Insanity (3 Seasons)</footer>
+    <footer id="footer">Open Source Objects (1 Season)</footer>
+   <footer id="footer">Animated Inanimate Battle (1 Season)</footer>
+   <footer id="footer"> Paper Puppets/Paper Puppets Take 2 (2 Seasons)</footer>
+   <footer id="footer">Exellent Entities/Extraordanarily Exellent Entities (2 Seasons)</footer>
+   
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/lcGtU2eYeyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </body>
+</html>
